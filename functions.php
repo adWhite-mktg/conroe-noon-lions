@@ -122,6 +122,10 @@ add_action( 'widgets_init', 'low_dash_widgets_init' );
 function low_dash_scripts() {
 	wp_enqueue_style( 'low-dash-style', get_stylesheet_uri() );
 
+	wp_enqueue_style( 'nopec-fonts', 'https://use.typekit.net/rcw8gfz.css' );
+
+	wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css' );
+
 	wp_enqueue_script( 'low-dash-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'low-dash-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
@@ -172,3 +176,18 @@ if ( class_exists( 'WooCommerce' ) ) {
  * Load WP Bootstrap Navwalker
  */
 require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+
+/**
+ * Options page
+ */
+if( function_exists('acf_add_options_page') ) {
+
+	acf_add_options_page(array(
+		'page_title' 	=> 'Theme General Settings',
+		'menu_title'	=> 'Theme Settings',
+		'menu_slug' 	=> 'theme-general-settings',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> false
+	));
+
+}

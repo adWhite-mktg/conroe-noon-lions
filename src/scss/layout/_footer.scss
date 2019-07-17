@@ -1,0 +1,27 @@
+.site-footer {
+  padding-top: 4em;
+  padding-bottom: 4em;
+  border-top: 15px solid RGBA(21, 113, 193, 1.00);
+
+  .social-list {
+    display: flex;
+  }
+
+  .social-item {
+    &:last-of-type {
+      .social-link {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .social-link {
+    color: white;
+    margin-right: .5em;
+    font-size: $font-size-lg * 1.5;
+
+    &:hover {
+      color: theme-color('brand-green');
+    }
+  }
+}

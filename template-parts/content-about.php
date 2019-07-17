@@ -10,6 +10,8 @@
 $page_options = get_field( 'page_options', 'option' );
 $background_image = $page_options['header_background'];
 $background_image_url = $background_image['url'];
+
+
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -36,5 +38,28 @@ $background_image_url = $background_image['url'];
             ) );
             ?>
 		</div> <!-- .container -->
+
+		<?php
+       if ( have_rows( 'page_content' ) ) :
+
+            while ( have_rows( 'page_content' ) ) : the_row();
+
+                if ( get_row_layout() == 'content_with_image' ) :
+                    get_template_part( 'template-parts/stripe', 'content' );
+                endif;
+
+                if ( get_row_layout() == 'call_to_action' ) :
+                    get_template_part( 'template-parts/stripe', 'cta' );
+                endif;
+
+                if ( get_row_layout() == 'full_width_image' ) :
+                    get_template_part( 'template-parts/stripe', 'image' );
+                endif;
+
+            endwhile;
+
+       endif;
+       ?>
+
 	</div><!-- .entry-content -->
 </article><!-- #post-<?php the_ID(); ?> -->

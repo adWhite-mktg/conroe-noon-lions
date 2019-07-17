@@ -2,7 +2,7 @@ const mix = require("laravel-mix");
 // const Rsync = require("rsync");
 
 // const themeName = "wp-whiteboard";
-const devUrl = "whiteboardv3.local";
+const devUrl = "nopec.test";
 // const distFolder = `../${themeName}`;
 
 // const rsync = new Rsync()

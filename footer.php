@@ -15,23 +15,11 @@
 		</div> <!-- .container -->
 	</main><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
-		<div class="container">
-			<div class="row">
-				<div class="site-info col">
-					<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'low-dash' ) ); ?>">
-						<?php
-						/* translators: %s: CMS name, i.e. WordPress. */
-						printf( esc_html__( 'Proudly powered by %s', 'low-dash' ), 'WordPress' );
-						?>
-					</a>
-					<span class="sep"> | </span>
-						<?php
-						/* translators: 1: Theme name, 2: Theme author. */
-						printf( esc_html__( 'Theme: %1$s by %2$s.', 'low-dash' ), 'low-dash', '<a href="https://jolvera.biz">Juan Olvera</a>' );
-						?>
-				</div><!-- .site-info -->
-			</div> <!-- .row -->
+	<footer id="colophon" class="site-footer px-4 bg-brand-dark text-light text-center">
+		<div class="container-fluid d-flex flex-column">
+    
+
+			<p class="mb-0 w-100 lead font-weight-normal">&copy; 2019 Conroe Noon Lions</p>
 		</div> <!-- .container -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

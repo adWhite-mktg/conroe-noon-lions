@@ -19,7 +19,7 @@
 		<div class="container-fluid d-flex flex-column">
     
 
-			<p class="mb-0 w-100 lead font-weight-normal">&copy; 2019 Conroe Noon Lions</p>
+			<p class="mb-0 w-100 lead font-weight-normal">&copy; 2019 Conroe Noon Lions Club</p>
 		</div> <!-- .container -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

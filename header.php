@@ -27,7 +27,7 @@
 			<div class="row">
 				<div class="site-branding col-12 col-md-3">
 					<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'low-dash' ); ?></a>
-
+          
 					<?php
 					the_custom_logo();
 					if ( is_front_page() && is_home() ) :
@@ -43,7 +43,8 @@
 					if ( $low_dash_description || is_customize_preview() ) :
 						?>
 						<p class="sr-only site-description"><?php echo $low_dash_description; /* WPCS: xss ok. */ ?></p>
-					<?php endif; ?>
+          <?php endif; ?>
+          <div class="entity-name">Conroe Noon Lions Club</div>
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="col-12 col-md-9 main-navigation site-nav navbar navbar-expand-md navbar-brand-green align-items-end" role="navigation">

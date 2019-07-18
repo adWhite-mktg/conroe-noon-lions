@@ -13,3 +13,21 @@
   font-weight: $font-weight-normal;
 }
 
+.site-branding {
+  display: flex;
+  align-items: center;
+}
+
+.entity-name {
+  margin-left: 20px;
+  color: RGBA(0, 80, 158, 1.00);
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.navbar-nav a {
+  text-decoration: none;
+  color: RGBA(0, 80, 158, 1.00);
+  font-weight: 600;
+}
+

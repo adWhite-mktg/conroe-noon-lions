@@ -15,7 +15,7 @@
 get_header();
 ?>
 
-	<div id="hero" class="jumbotron w-100 py-5 text-center text-light mb-0" style="background-image: url('http://conroe-noon-lions.local/wp-content/uploads/2019/07/lions-club-hero-3.png'); background-size: cover; background-position: center;">
+	<div id="hero" class="jumbotron w-100 py-5 text-center text-light mb-0" style="background-image: url('/wp-content/uploads/2019/07/lions-club-hero-4.png'); background-size: cover; background-position: center;">
     <h1 class="py-5 my-5">New site coming soon!</h1> 
 	</div> <!-- #hero -->
 
@@ -25,13 +25,14 @@ get_header();
 
 <p>Office Location: 1106 Wilson Road, Conroe, Texas 77301<br>
 
-Mailing Address: P.O.Box 1135, Conroe, Texas 77305<br>
+Mailing Address: P.O. Box 1135, Conroe, Texas 77305<br>
 
-Office Phone Number: 936-760-1666<br>
+Office Phone Number: <a href="tel:936-760-1666" style="text-decoration: none; color: RGBA(26, 28, 42, 1.00);"><span itemprop="telephone" content="+19367601666">936-760-1666</span></a><br>
+
 
 Fax Number: 936-760-1668<br>
 
-Email Address: cnlc@consolidated.net</p>
+Email Address: <a href="mailto:cnlc@consolidated.net" style="text-decoration: none; color: RGBA(26, 28, 42, 1.00);">cnlc@consolidated.net</a></p>
 			
 		</div> <!-- .container -->
 	</div><!-- #primary -->
